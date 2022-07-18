@@ -1,0 +1,158 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(233, 231, 231);
+  z-index: 100;
+}
+
+.left-section {
+  width: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  height:20px;
+  width:30px;
+  margin-left: 25px;
+  margin-right: 20px;
+}
+.youTube-icon {
+  height: 95px;
+  width: 128px;
+    
+}
+.middle-section {
+  flex:1;
+  margin-left: 70px;
+  margin-right: 33px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.searchBox {
+  flex: 1;
+  height: 34px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(202, 200, 200);
+  border-radius: 2px;
+  box-shadow:inset 1px 1px 3px rgba(0, 0, 0, 0.08);
+    
+}
+.searchBox::placeholder {
+  font-size: 15px;
+    
+}
+.search-button {
+  height:38px;
+  width: 50px;
+  background-color: rgb(236, 233, 233);
+  border: 1px solid rgb(202, 200, 200);
+  margin-left: -1.5px;
+  margin-right: 10px;
+  border-radius: 2px;
+    
+}
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.app-icon-container,
+.notifications-icon-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+    
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.app-icon-container .tooltip,
+.notifications-icon-container .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 5px 8px 5px 8px;
+  border-radius: 2px;
+  font-size: 11px;
+  bottom: -28px;
+  opacity: 0;
+  transition: opacity 0.12s;
+  pointer-events: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.app-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip{
+  opacity: 1;  
+}
+.search-icon {
+  height:17px;
+}
+.voice-search-button {
+  height:38px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(245, 244, 244);
+}
+.microphone-icon {
+  height:18px;
+  width: 16px;
+}
+.right-section {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.upload {
+  height: 30px;
+  width: 40px;
+  border: 1px solid rgb(202, 200, 200);
+}
+.YoutubeApps {
+  height: 30px;
+  width: 40px;
+  border: 1px solid rgb(202, 200, 200);
+}
+
+.notification-icon{
+  height: 22px;
+  width: 25px;
+}
+
+.notifications-icon-container {  
+  height: 25px;
+  width: 28px;
+}
+
+.notifications-count {
+  position: absolute;
+  background-color: rgb(197, 0, 0);
+  color: white;
+  font-size: 9px;
+  top: -3px;
+  right: -3px;
+  padding-left: 5px;
+  padding-right:5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 50%;
+}
+.user-picture {
+  width: 30px;
+  border-radius: 50%;
+}
